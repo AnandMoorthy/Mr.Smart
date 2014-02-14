@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mr.Smart</title>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+		<link rel="stylesheet" href="themes/anandtheme.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+
+		<meta name="author" content="Anand" />
+	</head>
+	<body>	
+		<form><br><br><br><br><br><br><br><br><br><br><br><br>
+		<center><button type="button" class="ui-btn ui-btn-inline" onclick="anand()">Guess it!</button></center>
+		</form>
+	<script>
+		function anand()
+		{
+		var to;
+		var guess;
+		to = Math.ceil(Math.random()*10);
+		guess=window.prompt("I'm Thinking a number between 1 and 10." + " What it is","");
+		while(guess != to)
+		{
+		if(guess < to)
+		{
+		guess = window.prompt("Your guess of" + guess + " was to low. Guess again.", "");
+		}
+		else {
+		guess=window.prompt("Your guess Of" + guess + " was to high. Guess again.", "");
+		}
+		}
+		window.alert(guess +" is Correct!");
+		}
+	</script>
+	</body>
+</html>  
