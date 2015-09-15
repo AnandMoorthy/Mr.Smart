@@ -1,4 +1,4 @@
 Mr.Smart
 ========
 
-Small example for Artificail Intelligenct
+Small example for if else 
